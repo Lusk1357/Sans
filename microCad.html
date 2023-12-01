@@ -1,0 +1,47 @@
+﻿<!doctype html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <title>SENS - Cadastro de Microcontroladores</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="microCad.css">
+    <link rel="stylesheet" href="header and footer.css">
+    <link rel="stylesheet" href="text.css">
+</head>
+<body class="micro-body">
+
+    <section class="micro-section">
+
+        <form class="form">
+            <h2 class="title -cad">Cadastro de Microcontrolador</h2>
+            <div class="format-form">
+                <button type="button" class="btn" id="btn-buscar">Mostrar Microcontroladores</button>
+                <button type="button" class="btn" id="btn-adicionar">Adicionar</button>
+            </div>
+        </form>
+
+        <form class="form -tab">
+            <div>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Cód</th>
+                            <th class="align-left">Descrição</th>
+                            <th>MacAddress</th>
+                            <th>IPAddress</th>
+                            <th>Ação</th>
+                            <th>Medições</th>
+                        </tr>
+                    </thead>
+                    <tbody id="resultList">
+                    </tbody>
+                </table>
+            </div>
+        </form>
+    </section>
+
+    <script src="microCad.js"></script>
+</body>
+</html>

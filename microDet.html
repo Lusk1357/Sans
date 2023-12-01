@@ -1,0 +1,61 @@
+﻿<!doctype html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <title>SENS - Cadastro de Microcontroladores</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="microDet.css">
+    <link rel="stylesheet" href="header and footer.css">
+    <link rel="stylesheet" href="text.css">
+</head>
+<body class="det-body">
+    <header class="head-section">
+        <img src="icon.jpeg" alt="" height, width="90">
+        <nav class="navigation">
+        <a class="text" href="index.html">Início</a>
+        <a class="text"  href="clienteCad.html">Cadastros</a>                
+        <a class="text" href="medicoes.html">Medições</a>
+        <a class="text" href="https://encurtador.com.br/axHKU">Power BI</a> 
+        </nav>
+    </header>
+    
+    <section class="det-section">
+        <form id="form-micro" class="cli-form">
+            <h2 class="title -cad">Cadastro de Microcontrolador</h2>
+
+            <input type="hidden" id="codigo-micro" value="0" />
+            <input type="hidden" id="codlocal" value="0" />
+
+            <div class="uni-input">
+                    <label for="descricao" class="form-label">Descrição do Microcontrolador</label>
+                    <input type="text" class="input" id="descricao" maxlength="100">
+            </div>
+
+            <div class="wrapper-content">
+                <div class="uni-input">
+                    <label for="macaddress" class="form-label">Mac Address</label>
+                    <input type="text" class="input" id="macaddress" maxlength="100">
+                </div>
+
+                <div class="uni-input">
+                    <label for="ipaddress" class="form-label">IP Address</label>
+                    <input type="text" class="input" id="ipaddress" maxlength="15">
+                </div>
+            </div>
+
+            <div class="format-btn">
+                <button id="btn-salvar" type="submit" class="btn">Salvar</button>
+                <button id="btn-cancelar" type="button" class="btn -red" onclick="window.location.href='microCad.html?btClic=true';">Cancelar</button>
+            </div>
+        </form>
+    </section>
+
+    <footer class="section-footer">
+        <h2 class="text">© 2023 SENS Monitoramento Remoto</h2>
+    </footer>
+
+    <script src="microDet.js"></script>
+    </body>
+    </html>

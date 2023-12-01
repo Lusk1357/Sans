@@ -1,0 +1,32 @@
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+    background-color: black;
+}
+
+a{
+    color: inherit;
+    text-decoration: none;
+}
+
+a:hover{
+    color: #fff;
+    text-decoration: none;
+}
+
+button{
+    margin: 0;
+    border: none;
+}
+
+input,select{
+    box-shadow: 0 0 0 0;
+    border: 0 none;
+    outline: 0;
+    padding: 0;
+}

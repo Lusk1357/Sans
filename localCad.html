@@ -1,0 +1,63 @@
+﻿<!doctype html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <title>SENS - Cadastro de Locais</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="header and footer.css">
+    <link rel="stylesheet" href="localCad.css">
+    <link rel="stylesheet" href="text.css">
+</head>
+<body class="cad-body">
+
+    <header class="head-section">
+        <img src="icon.jpeg" alt="" height, width="90">
+        <nav class="navigation">
+            <a class="text" href="index.html">Início</a>
+            <a class="text"  href="clienteCad.html">Cadastros</a>                
+            <a class="text" href="medicoes.html">Medições</a>
+            <a class="text" href="https://encurtador.com.br/axHKU">Power BI</a> 
+        </nav>
+    </header>
+
+    <section class="cad-section">
+        <form class="form">
+            <div class="format-form">
+            <h2 class="title -cad">Cadastro de Local</h2>
+
+            <input type="text" id="texto" class="input" placeholder="Endereço do local...">
+            <div class="wrapp-btn">
+                <button type="button" class="btn" id="btn-buscar">Mostrar Locais</button>
+                <button type="button" class="btn" id="btn-adicionar">Adicionar</button>
+            </div>
+        </div>
+        </form>
+
+        <form class="form -tab">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Cód</th>
+                            <th class="align-left">Descrição</th>
+                            <th>Endereço</th>
+                            <th>Cidade</th>
+                            <th>Ação</th>
+                            <th>Micros</th>
+                        </tr>
+                    </thead>
+                    <tbody id="resultList">
+                    </tbody>
+                </table>
+            </div>
+        </form>
+    </section>
+
+    <footer class="section-footer">
+        <h2 class="text">© 2023 SENS Monitoramento Remoto</h2>
+    </footer>
+
+    <script src="localCad.js"></script>
+</body>
+</html>

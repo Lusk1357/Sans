@@ -1,0 +1,163 @@
+﻿<!doctype html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <title>SENS - Cadastro de Clientes</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="clienteDet.css">
+    <link rel="stylesheet" href="header and footer.css">
+    <link rel="stylesheet" href="text.css">
+</head>
+
+<body>
+    <header class="head-section">
+    <img src="icon.jpeg" alt="" height, width="90">
+    <nav class="navigation">
+    <a class="text" href="index.html">Início</a>
+    <a class="text"  href="clienteCad.html">Cadastros</a>                
+    <a class="text" href="medicoes.html">Medições</a>
+    <a class="text" href="https://encurtador.com.br/axHKU">Power BI</a> 
+    </nav>
+    </header>
+
+    <section class="det-section">
+        <form id="form-cliente" class="cli-form">
+            <h2 class="title -cad">Cadastro de Cliente</h2>
+            <input type="hidden" id="codigo-cliente" value="0" />
+
+            <div class="uni-input">
+                <label for="nomeourazao" class="form-label">Nome ou Razão Social</label>
+                <input type="text" class="input" id="nomeourazao" maxlength="100">
+            </div>
+
+            <div class="wrapper-content">
+            <div class="uni-input">
+                <label for="endereco" class="form-label">Endereço</label>
+                <input type="text" class="input" id="endereco" maxlength="100">
+            </div>
+
+            <div class="uni-input">
+                <label for="cep" class="form-label">CEP</label>
+                <input type="text" class="input" id="cep" maxlength="9">
+            </div>
+
+            <div class="uni-input">
+                <label for="cidade" class="form-label">Cidade</label>
+                <input type="text" class="input" id="cidade" maxlength="100">
+            </div>
+
+
+            <div class="uni-input">
+                <label for="uf" class="form-label">UF</label>
+                <select class="input" id="uf">
+                    <option value="AC">Acre</option>
+                    <option value="AL">Alagoas</option>
+                    <option value="AP">Amapá</option>
+                    <option value="AM">Amazonas</option>
+                    <option value="BA">Bahia</option>
+                    <option value="CE">Ceará</option>
+                    <option value="DF">Distrito Federal</option>
+                    <option value="ES">Espírito Santo</option>
+                    <option value="GO">Goiás</option>
+                    <option value="MA">Maranhão</option>
+                    <option value="MT">Mato Grosso</option>
+                    <option value="MS">Mato Grosso do Sul</option>
+                    <option value="MG">Minas Gerais</option>
+                    <option value="PA">Pará</option>
+                    <option value="PB">Paraíba</option>
+                    <option value="PR">Paraná</option>
+                    <option value="PE">Pernambuco</option>
+                    <option value="PI">Piauí</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="RN">Rio Grande do Norte</option>
+                    <option value="RS">Rio Grande do Sul</option>
+                    <option value="RO">Rondônia</option>
+                    <option value="RR">Roraima</option>
+                    <option value="SC">Santa Catarina</option>
+                    <option value="SP">São Paulo</option>
+                    <option value="SE">Sergipe</option>
+                    <option value="TO">Tocantins</option>
+                </select>
+            </div>
+
+            <div class="uni-input">
+                <label for="ddd" class="form-label">DDD:</label>
+                <input type="text" id="ddd" name="ddd" maxlength="5" class="input">
+            </div>
+
+            <div class="uni-input">
+                <label for="telefone" class="form-label">Telefone:</label>
+                <input type="text" id="telefone" name="telefone" maxlength="45" class="input">
+            </div>
+
+            <div class="uni-input">
+                <label for="condpagto" class="form-label">Condições de Pagamento:</label>
+                <select id="condpagto" name="condpagto" class="input">
+                <option value="0">Nenhum</option>
+                <option value="1">A VISTA</option>
+                <option value="2">2x</option>
+                <option value="3">3x</option>
+                <option value="4">4x</option>
+                <option value="5">5x</option>
+                <option value="6">6x</option>
+                <option value="7">7x</option>
+                <option value="8">8x</option>
+                <option value="9">9x</option>
+                <option value="10">10x</option>
+                <option value="11">11x</option>
+                <option value="12">12x</option>
+                </select>
+            </div>
+
+            <div class="uni-input">
+                <label for="nascimento" class="form-label">Data de Nascimento:</label>
+                <input type="date" id="nascimento" name="nascimento" required class="input">
+            </div>
+
+            </div>
+
+            <div class="uni-input">
+                <label for="email" class="form-label">Email:</label>
+                <input type="email" id="email" name="email" maxlength="100" class="input" autocomplete="email">
+            </div>
+
+            <div class="wrapper-content">
+
+            <div class="uni-input">
+                <label for="rg" class="form-label">RG:</label>
+                <input type="text" id="rg" name="rg" maxlength="12" class="input">
+            </div>
+
+            <div class="uni-input">
+                <label for="cpf" class="form-label">CPF:</label>
+                <input type="text" id="cpf" name="cpf" maxlength="14" class="input">
+            </div>
+
+
+            <div class="uni-input">
+                <label for="cnpj" class="form-label">CNPJ:</label>
+                <input type="text" id="cnpj" name="cnpj" maxlength="19" class="input">
+            </div>
+
+            <div class="uni-input">
+                <label for="inscricaoestadual" class="form-label">Inscrição Estadual:</label>
+                <input type="text" id="inscricaoestadual" name="inscricaoestadual" maxlength="15" class="input">
+            </div>
+
+            <div class="format-btn">
+                <button id="btn-salvar" type="submit" class="btn">Salvar</button>
+                <button id="btn-cancelar" type="button" class="btn -red" onclick="window.location.href='clienteCad.html?btClic=true';">Cancelar</button>
+            </div>
+
+        </form>
+    </section>
+
+    <footer class="section-footer">
+        <h2 class="text">© 2023 SENS Monitoramento Remoto</h2>
+    </footer>
+
+    <script src="clienteDet.js"></script>
+</body>
+</html>

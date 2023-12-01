@@ -1,0 +1,111 @@
+﻿<!doctype html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <title>SENS - Cadastro de Locais</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="localDet.css">
+    <link rel="stylesheet" href="header and footer.css">
+    <link rel="stylesheet" href="text.css">
+</head>
+<body>
+
+    <header class="head-section">
+        <img src="icon.jpeg" alt="" height, width="90">
+        <nav class="navigation">
+        <a class="text" href="index.html">Início</a>
+        <a class="text"  href="clienteCad.html">Cadastros</a>                
+        <a class="text" href="medicoes.html">Medições</a>
+        <a class="text" href="https://encurtador.com.br/axHKU">Power BI</a> 
+        </nav>
+    </header>
+
+    <section class="det-section">
+        <form id="form-local" class="cli-form">
+            <h2 class="title -cad">Cadastro de Local</h2>
+            <input type="hidden" id="codigo-local" value="0" />
+            <input type="hidden" id="codcli" value="0" />
+            
+                <div class="uni-input">
+                    <label for="descricao" class="form-label">Descrição</label>
+                    <input type="text" class="input" id="descricao" maxlength="100">
+                </div>
+                
+                <div class="wrapper-content">
+                    <div class="uni-input">
+                        <label for="endereco" class="form-label">Endereço</label>
+                        <input type="text" class="input" id="endereco" maxlength="100">
+                    </div>
+
+                    <div class="uni-input">
+                        <label for="cep" class="form-label">CEP</label>
+                        <input type="text" class="input" id="cep" maxlength="9">
+                    </div>
+                
+                    <div class="uni-input">
+                        <label for="cidade" class="form-label">Cidade</label>
+                        <input type="text" class="input" id="cidade" maxlength="100">
+                    </div>
+
+                    <div class="uni-input">
+                        <label for="uf" class="form-label">UF</label>
+                        <select class="input" id="uf">
+                            <option value="AC">Acre</option>
+                            <option value="AL">Alagoas</option>
+                            <option value="AP">Amapá</option>
+                            <option value="AM">Amazonas</option>
+                            <option value="BA">Bahia</option>
+                            <option value="CE">Ceará</option>
+                            <option value="DF">Distrito Federal</option>
+                            <option value="ES">Espírito Santo</option>
+                            <option value="GO">Goiás</option>
+                            <option value="MA">Maranhão</option>
+                            <option value="MT">Mato Grosso</option>
+                            <option value="MS">Mato Grosso do Sul</option>
+                            <option value="MG">Minas Gerais</option>
+                            <option value="PA">Pará</option>
+                            <option value="PB">Paraíba</option>
+                            <option value="PR">Paraná</option>
+                            <option value="PE">Pernambuco</option>
+                            <option value="PI">Piauí</option>
+                            <option value="RJ">Rio de Janeiro</option>
+                            <option value="RN">Rio Grande do Norte</option>
+                            <option value="RS">Rio Grande do Sul</option>
+                            <option value="RO">Rondônia</option>
+                            <option value="RR">Roraima</option>
+                            <option value="SC">Santa Catarina</option>
+                            <option value="SP">São Paulo</option>
+                            <option value="SE">Sergipe</option>
+                            <option value="TO">Tocantins</option>
+                        </select>
+                    </div>
+                
+                    <div class="uni-input">
+                        <label for="ddd" class="form-label">DDD:</label>
+                        <input type="text" id="ddd" name="ddd" maxlength="5" class="input">
+                    </div>
+
+                    <div class="uni-input">
+                        <label for="telefone" class="form-label">Telefone:</label>
+                        <input type="text" id="telefone" name="telefone" maxlength="45" class="input">
+                    </div>
+                </div>
+
+                <div class="format-btn">
+                    <button id="btn-salvar" type="submit" class="btn">Salvar</button>
+                    <button id="btn-cancelar" type="button" class="btn -red" onclick="window.location.href='localCad.html?btClic=true';">Cancelar</button>
+                </div>
+            </div>
+        </form>
+    </section>
+
+    <footer class="section-footer">
+        <h2 class="text">© 2023 SENS Monitoramento Remoto</h2>
+    </footer>
+
+        <script src="localDet.js"></script>
+
+    </body>
+    </html>

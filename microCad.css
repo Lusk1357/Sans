@@ -1,0 +1,106 @@
+.micro-body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.micro-section{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: #000;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    flex: 1;
+}
+
+.form{
+    text-align: center;
+    background-color: #0e0f11;
+    width: 1250px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 20px;
+}
+
+.form.-tab{
+    padding-top: 20px;
+    margin-top: 20px;
+}
+
+.format-form{
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+
+.wrapp-btn{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 20px;
+}
+
+.input{
+    box-sizing: border-box;
+    border: 3px solid #000;
+    font-size: 30px;
+    width: 100%;
+    height: 40px;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.btn{
+    background-color: #4caf50;
+    color: white;
+    cursor: pointer;
+    font-size: 20px;
+    border-radius: 4px;
+    padding: 20px 20px;
+    border: 2.5px solid #000;
+}
+
+.btn:hover{
+    transform: scale(1.04);
+}
+
+.btn.-visualizar{
+    background-color: rgb(16, 16, 156);
+    padding: 7px 7px;
+    font-size: 17px;
+}
+
+.btn.-editar{
+    background-color: darkgoldenrod;
+    padding: 7px 7px;
+    font-size: 17px;
+}
+
+.btn.-excluir{
+    background-color: rgb(105, 16, 16);
+    padding: 7px 7px;
+    font-size: 17px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0 5px;
+    
+}
+
+th, td {
+    padding: 20px;
+    border: 1px solid #ccc;
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+
+.align-left{
+    font-size: 18px;
+}

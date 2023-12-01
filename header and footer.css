@@ -1,0 +1,35 @@
+.head-section{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: black;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-bottom: 10px solid #21252956
+    
+}
+
+.section-footer{
+    display: flex;
+    background-color: #0e0f11;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    margin-top: 10px;
+}
+
+.navigation{
+    display: flex;
+    align-items: center;
+    
+}
+
+
+.text{
+    text-align: center;
+    color: white;
+    margin-right: 30px;
+    font-size: 20px
+}
