@@ -1,9 +1,19 @@
+
+body{
+    
+}
 .banner{
     display: flex;
     justify-content: left;
     background-color: #000;
-    height: 600px;
     border-bottom: 10px solid #000;
+}
+.banner img{
+    max-width: 600px;
+
+}
+.banner h1 h2{
+    
 }
 
 .wrapper-text{
@@ -14,5 +24,25 @@
    justify-content: center;
    padding-right: 20px;
    padding-left: 120px;
+   
 }
+.wrapper-text h1 {
+    font-size: 40px;
+
+}
+
+.wrapper-text h2 {
+}
+
+.text:hover{
+    background-color: white;
+    padding: 10px 15px;
+    border-radius: 20px;
+    color: black;
+    transition: 0.3s;
+    box-shadow: 1px 1px 10px white,-1px -1px 8px white;
+}
+
+
+
 
